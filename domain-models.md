@@ -12,3 +12,6 @@
 | Item | flavor(@String) | getFlavor() | @String |
 | | id(@String) | getId() | @String |
 | | price(@Number) | getPrice() | @Number |
+
+
+Link to Kanban board : https://miro.com/app/board/uXjVKTd0PD8=/

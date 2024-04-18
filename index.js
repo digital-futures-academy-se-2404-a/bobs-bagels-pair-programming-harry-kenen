@@ -36,6 +36,10 @@ export class Basket {
     }
     return total;
   }
+
+  setCapacity(newCapacity) {
+    this.capacity = newCapacity;
+  }
 }
 
 export class Item {

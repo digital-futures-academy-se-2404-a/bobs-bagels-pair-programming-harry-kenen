@@ -2,6 +2,10 @@ import Basket from "../src/basket.js";
 import createRandomItem from "../src/create-random-item.js";
 
 const testIncreaseCapacity = () => {
+  console.log("TEST: Item capacity can be increased.");
+
+  const expectedCapacity = 7;
+
   // Creates an inventory first so that all possible ID's are assigned from beginning.
   const inventory = new Array();
   for (let i = 0; i < 15; i++) {
@@ -21,9 +25,10 @@ const testIncreaseCapacity = () => {
     basket.addItem(inventory.pop());
   }
 
+  const actualCapacity = basket.getCapacity();
+
   // If the 2 items were added successfully and the capacity increased, it returns true. Otherwise, it'll return false.
-  return basket.items.length === 7;
+  expectedCapacity === actualCapacity ? console.log("PASS") : console.log(`FAIL: Expected ${expectedCapacity}, actual ${actualCapacity}.`);
 }
 
-console.log("TEST: Item capacity can be increased.");
-testIncreaseCapacity() ? console.log("PASS") : console.log("FAIL");
+testIncreaseCapacity();

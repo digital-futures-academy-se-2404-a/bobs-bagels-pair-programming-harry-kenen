@@ -1,7 +1,7 @@
 import Basket from "../src/basket.js";
 import createRandomItem from "../src/create-random-item.js";
 
-const testRemoveItem = () => {
+export default function testRemoveItem() {
   console.log("TEST: Items can be removed from basket.");
 
   const basket = new Basket();
@@ -15,5 +15,3 @@ const testRemoveItem = () => {
 
   expectedLength === actualLength ? console.log("PASS") : console.log(`FAIL: Expected ${expectedLength}, actual ${actualLength}.`);
 }
-
-testRemoveItem();

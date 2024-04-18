@@ -42,6 +42,9 @@ export default class Basket {
   }
 
   setCapacity(newCapacity) {
+    if (newCapacity < this.items.length) {
+      return;
+    }
     this.capacity = newCapacity;
   }
 }

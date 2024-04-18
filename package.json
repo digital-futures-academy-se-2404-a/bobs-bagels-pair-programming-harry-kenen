@@ -4,11 +4,11 @@
   "description": "A pair-programming challenge to create a working shopping basket for a Bagel store.",
   "main": "src/index.js",
   "directories": {
-    "test": "tests/test.js"
+    "test": "tests"
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tests/test.js"
   },
   "author": "Harry Curtis, Kenen D'Souza",
   "license": "ISC"

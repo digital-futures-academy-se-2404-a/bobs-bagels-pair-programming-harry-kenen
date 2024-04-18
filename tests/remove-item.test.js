@@ -8,6 +8,7 @@ const testRemoveItem = () => {
   basket.removeItem(0);
   const newItems = basket.getItems();
   const newBasketItemsLength = newItems.length;
+  
   return newBasketItemsLength === 0;
 }
 

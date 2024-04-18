@@ -4,7 +4,7 @@
   "description": "A pair-programming challenge to create a working shopping basket for a Bagel store.",
   "main": "src/index.js",
   "directories": {
-    "test": "tests"
+    "test": "tests/test.js"
   },
   "type": "module",
   "scripts": {

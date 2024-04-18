@@ -14,7 +14,11 @@ export class Basket {
   }
 
   addItem(item) {
+    if (this.items.length >= this.capacity) {
+      return false;
+    }
     this.items.push(item);
+    return true;
   }
 
   removeItem(itemId) {

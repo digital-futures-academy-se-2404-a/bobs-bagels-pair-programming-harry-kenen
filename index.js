@@ -1,4 +1,4 @@
-class Basket {
+export class Basket {
   constructor() {
     this.items = new Set();
     this.capacity = 5;
@@ -26,7 +26,7 @@ class Basket {
   }
 }
 
-class Item {
+export class Item {
   constructor(flavor, price, id) {
     this.flavor = flavor;
     this.price = price;
@@ -45,4 +45,3 @@ class Item {
     return this.price;
   }
 }
-

@@ -1,7 +1,7 @@
 import Basket from "../src/basket.js";
 import createRandomItem from "../src/create-random-item.js";
 
-const testFullCapacity = () => {
+export default function testFullCapacity() {
   console.log("TEST: Items cannot be added when basket capacity is reached.");
 
   const basket = new Basket();
@@ -20,5 +20,3 @@ const testFullCapacity = () => {
 
   expectedLength === actualLength ? console.log("PASS") : console.log(`FAIL: Expected 5, actual ${actualLength}.`);
 }
-
-testFullCapacity();

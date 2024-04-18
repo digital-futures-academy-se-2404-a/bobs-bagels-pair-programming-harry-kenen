@@ -1,6 +1,6 @@
 import Basket from "../src/basket.js";
 
-export default function removeItemEmpty() {
+export default function testRemoveItemEmpty() {
   console.log("TEST: An item cannot be removed from an empty basket.");
 
   const expectedLength = 0;

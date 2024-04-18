@@ -19,6 +19,7 @@ export default class Basket {
 
   addItem(item) {
     if (this.items.length >= this.capacity) {
+      console.log("Your basket is full! The bagel could not be added, please remove a bagel or get a larger basket")
       return;
     }
     this.items.push(item);

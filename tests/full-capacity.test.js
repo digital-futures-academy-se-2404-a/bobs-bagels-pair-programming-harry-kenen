@@ -19,4 +19,7 @@ export default function testFullCapacity() {
   const actualLength = basket.items.length;
 
   expectedLength === actualLength ? console.log("PASS") : console.log(`FAIL: Expected 5, actual ${actualLength}.`);
+
 }
+
+testFullCapacity()

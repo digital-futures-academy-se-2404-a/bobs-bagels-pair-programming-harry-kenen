@@ -9,6 +9,10 @@ export default class Basket {
     return this.items;
   }
 
+  getCapacity() {
+    return this.capacity;
+  }
+
   setItems(items) {
     this.items = items;
   }

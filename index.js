@@ -1,6 +1,6 @@
 export class Basket {
   constructor() {
-    this.items = new Set();
+    this.items = new Array();
     this.capacity = 5;
     this.totalValue = this.getTotalValue();
   }

@@ -14,13 +14,13 @@ export class Basket {
   }
 
   addItem(item) {
-    this.items.add(item);
+    this.items.push(item);
   }
 
   removeItem(itemId) {
     this.items.forEach((item) => {
       if (item.id === itemId) {
-        this.items.delete(item)
+        this.items.pop(item)
       }
     })
   }

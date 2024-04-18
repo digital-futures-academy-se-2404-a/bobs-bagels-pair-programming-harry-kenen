@@ -27,7 +27,7 @@ export default class Basket {
   removeItem(itemId) {
     this.items.forEach((item) => {
       if (item.id === itemId) {
-        this.items.pop(item)
+        this.items.pop(item);
       }
     })
   }

@@ -1,14 +1,12 @@
 import Basket from "../src/basket.js";
-import createRandomItem from "../src/create-random-item.js";
 
-export default function testRemoveItem() {
-  console.log("TEST: Items can be removed from basket.");
+export default function testRemoveItemEmpty() {
+  console.log("TEST: An item cannot be removed from an empty basket.");
+
+  const expectedLength = 0;
 
   const basket = new Basket();
-  const expectedLength = 0;
-  const item = createRandomItem(0);
-
-  basket.addItem(item);
+  
   basket.removeItem(0);
 
   const actualLength = basket.items.length;

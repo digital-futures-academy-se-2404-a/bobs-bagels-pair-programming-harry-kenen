@@ -1,6 +1,7 @@
 import { assertEquals } from "./test-framework.js";
 
-import { Basket, Item } from "../index.js"
+import Basket from "../src/basket.js";
+import Item from "../src/item.js";
 
 // Arrange
 let item1, item2, item3

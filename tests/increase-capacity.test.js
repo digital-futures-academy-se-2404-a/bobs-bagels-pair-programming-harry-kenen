@@ -1,4 +1,5 @@
-import { Basket, Item } from "../index.js";
+import Basket from "../src/basket.js";
+import Item from "../src/item.js";
 
 const testIncreaseCapacity = () => {
   const createRandomItem = (id) => {

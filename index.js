@@ -13,8 +13,12 @@ export class Basket {
     this.items.add(item);
   }
 
-  removeItem(item) {
-    this.items.delete(item);
+  removeItem(itemId) {
+    this.items.forEach((item) => {
+      if (item.id === itemId) {
+        this.items.delete(item)
+      }
+    })
   }
 
   getTotalValue() {

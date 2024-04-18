@@ -2,7 +2,7 @@
 
 | Objects | Properties | Messages | Output |
 | --- | --- | --- | --- |
-| Basket | items(@Set[@Item]) | getItems() | @Set[@Items] |
+| Basket | items(@Set[@Item]) | getItems() | @Array[@Items] |
 | | | addItem(@Item) | void |
 | | | removeItem(@Item) | void |
 | | capacity(@Number) | getCapacity() | @Number |

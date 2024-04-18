@@ -1,15 +1,19 @@
-import { Basket, Item } from "../index.js";
+import Basket from "../src/basket.js";
+import createRandomItem from "../src/create-random-item.js";
 
 const testRemoveItem = () => {
+  console.log("TEST: Items can be removed from basket.");
+
   const basket = new Basket();
-  const item = new Item("chocolate", 1.49, 0);
+  const expectedLength = 0;
+  const item = createRandomItem(0);
 
   basket.addItem(item);
   basket.removeItem(0);
-  const newItems = basket.getItems();
-  const newBasketItemsLength = newItems.length;
-  return newBasketItemsLength === 0;
+
+  const actualLength = basket.items.length;
+
+  expectedLength === actualLength ? console.log("PASS") : console.log(`FAIL: Expected ${expectedLength}, actual ${actualLength}.`);
 }
 
-console.log("TEST: Items are successfully removed from basket.");
-testRemoveItem() ? console.log("PASS") : console.log("FAIL");
+testRemoveItem();

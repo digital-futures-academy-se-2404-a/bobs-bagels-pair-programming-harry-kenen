@@ -1,4 +1,4 @@
-export class Basket {
+export default class Basket {
   constructor() {
     this.items = new Array();
     this.capacity = 5;
@@ -9,11 +9,18 @@ export class Basket {
     return this.items;
   }
 
+  getCapacity() {
+    return this.capacity;
+  }
+
   setItems(items) {
     this.items = items;
   }
 
   addItem(item) {
+    if (this.items.length >= this.capacity) {
+      return;
+    }
     this.items.push(item);
   }
 
@@ -32,24 +39,8 @@ export class Basket {
     }
     return total;
   }
-}
 
-export class Item {
-  constructor(flavor, price, id) {
-    this.flavor = flavor;
-    this.price = price;
-    this.id = id;
-  }
-
-  getFlavor() {
-    return this.flavor;
-  }
-
-  getId() {
-    return this.id;
-  }
-
-  getPrice() {
-    return this.price;
+  setCapacity(newCapacity) {
+    this.capacity = newCapacity;
   }
 }

@@ -9,6 +9,10 @@ export class Basket {
     return this.items;
   }
 
+  setItems(items) {
+    this.items = items;
+  }
+
   addItem(item) {
     this.items.add(item);
   }

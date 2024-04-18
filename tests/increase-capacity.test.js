@@ -1,7 +1,7 @@
 import Basket from "../src/basket.js";
 import createRandomItem from "../src/create-random-item.js";
 
-const testIncreaseCapacity = () => {
+export default function testIncreaseCapacity() {
   console.log("TEST: Item capacity can be increased.");
 
   const expectedCapacity = 7;
@@ -30,5 +30,3 @@ const testIncreaseCapacity = () => {
   // If the 2 items were added successfully and the capacity increased, it returns true. Otherwise, it'll return false.
   expectedCapacity === actualCapacity ? console.log("PASS") : console.log(`FAIL: Expected ${expectedCapacity}, actual ${actualCapacity}.`);
 }
-
-testIncreaseCapacity();

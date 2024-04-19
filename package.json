@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "tests/test.js"
+    "test": "node tests/test.js"
   },
   "author": "Harry Curtis, Kenen D'Souza",
   "license": "ISC"
